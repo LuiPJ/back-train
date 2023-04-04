@@ -2,16 +2,30 @@
   "name": "back-train",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
+    "dev": "nodemon serve.js",
+    "start": "node serve.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nikita Kanaev",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "@faker-js/faker": "^7.6.0",
+    "@prisma/client": "^4.12.0",
+    "argon2": "^0.30.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.10.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "colors": "^1.4.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
     "prisma": "^4.12.0"
   }
 }
